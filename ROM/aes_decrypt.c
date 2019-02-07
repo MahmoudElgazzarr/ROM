@@ -20,6 +20,10 @@
 inline uint8_t mul2(register uint8_t a) {
 	return (a&0x80)?((a<<1)^0x1b):(a<<1);
 }
+uint8_t mul(uint8_t bc)
+{
+	return bc*2;
+}
 
 void inv_shift_rows(register uint8_t *state) {
    register uint8_t temp,x;

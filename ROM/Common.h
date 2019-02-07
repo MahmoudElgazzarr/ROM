@@ -16,6 +16,7 @@ extern uint8_t SBOX[256];
 #define AES_ROUNDS          10  // 12, 14
 #define AES_ROUND_KEY_SIZE  176
 extern inline uint8_t mul2(register uint8_t a);
+extern uint8_t mul(uint8_t bc);
 
 void aes_decrypt_128(register uint8_t *roundkeys, register uint8_t *ciphertext,register uint8_t *plaintext);
 extern void aes_key_schedule_128(register uint8_t *key, register uint8_t *roundkeys);
